@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'capistrano',  '~> 3.0'
   spec.add_dependency 'puma',        '>= 2.6'
-  spec.add_dependency 'sshkit-sudo', '>= 1.1.0'
+  spec.add_dependency 'sshkit-sudo', '>= 0.1.0'
 end
