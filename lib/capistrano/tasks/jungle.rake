@@ -57,7 +57,7 @@ namespace :puma do
     desc 'Add current project to the jungle'
     task :add do
       on roles(fetch(:puma_role)) do|role|
-        sudo "/etc/init.d/puma add '#{current_path}' #{fetch(:puma_user, role.user)}"
+        sudo "/etc/init.d/puma add '#{current_path}' #{fetch(:puma_user, role.user, :puma_conf)}"
       end
     end
 
